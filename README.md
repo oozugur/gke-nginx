@@ -3,15 +3,15 @@ This project contains Google Cloud resources and Kubernetes deployment files. In
 Before running scripts, create Service Account and place it under root folder.
 If you don't want to create service account, you can download gcloud cli and run 'gcloud auth application-default login' command, it will automatically use your GCP credentials to provision resources.
 
-On the 01-state/ folder, we are provisioning Cloud Storage bucket for storing remote state files.
-On the 02-network/ folder, we are configuring our VPC and subnets which GKE will be deployed in.
-03-gke/ folder contains revelant scripts to provision Private Google Kubernetes Engine cluster.
-And finally 04-nginx/ folder. It contains Kubernetes Deployment and Service manifests, for deploying nginx:alpine image to the private cluster which we have created on 3rd step.
+- On the 01-state/ folder, we are provisioning Cloud Storage bucket for storing remote state files.
+- On the 02-network/ folder, we are configuring our VPC and subnets which GKE will be deployed in.
+- 03-gke/ folder contains revelant scripts to provision Private Google Kubernetes Engine cluster.
+- And finally 04-nginx/ folder. It contains Kubernetes Deployment and Service manifests, for deploying nginx:alpine image to the private cluster which we have created on 3rd step.
 
 02-network, 03-gke and 04-nginx terraform scripts have their remote backend located on Google Cloud Storage.
 
 #Questions
-Discuss briefly the pros an cons of the chosen solution. What benefits does it have? What kind of limitations or tradeoffs?
+- Discuss briefly the pros an cons of the chosen solution. What benefits does it have? What kind of limitations or tradeoffs?
 
 Pros
 
