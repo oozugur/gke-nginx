@@ -31,9 +31,9 @@ module "gke" {
   node_pools = [
     {
       name           = "main-pool"
-      machine_type   = "e2-micro"
+      machine_type   = "e2-small"
       image_type     = "COS_CONTAINERD"
-      node_locations = join(",", "${var.zones}")
+      node_locations = var.zone
       disk_size_gb   = 25
       min_count      = 1
       max_count      = 2

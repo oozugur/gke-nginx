@@ -2,6 +2,10 @@ variable "region" {
   type = string
 }
 
+variable "zone" {
+  type = string
+}
+
 variable "zones" {
   type = list(string)
 }
@@ -17,3 +21,5 @@ variable "subnets" {
 variable "project" {
   type = string
 }
+
+

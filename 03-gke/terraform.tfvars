@@ -1,4 +1,6 @@
-zones           = ["europe-west1-b"]
+zone           = "europe-west1-b"
+zones = ["europe-west1-b"]
+
 region          = "europe-west1"
 
 names = {
